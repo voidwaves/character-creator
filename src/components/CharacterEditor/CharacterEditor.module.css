@@ -4,10 +4,12 @@
 }
 
 .maxWidthWrapper {
+
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {

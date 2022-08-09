@@ -21,19 +21,21 @@ const ControlPane = ({
           {options.length} options
         </span>
       </h2>
-      <ButtonRow>
-        {options.map(({ id, label, color, children }) => (
-          <ToggleButton
-            key={id}
-            isSelected={currentOption === id}
-            onClick={() => handleSelectOption(id)}
-            label={label}
-            color={color}
-          >
-            {children}
-          </ToggleButton>
-        ))}
-      </ButtonRow>
+      <div className={styles.container}>
+        <ButtonRow>
+          {options.map(({ id, label, color, children }) => (
+            <ToggleButton
+              key={id}
+              isSelected={currentOption === id}
+              onClick={() => handleSelectOption(id)}
+              label={label}
+              color={color}
+            >
+              {children}
+            </ToggleButton>
+          ))}
+        </ButtonRow>
+      </div>
     </div>
   );
 };

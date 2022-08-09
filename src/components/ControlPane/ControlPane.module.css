@@ -10,12 +10,18 @@
     to deal with it yet!
   */
   margin-bottom: 32px;
+  width: 50%;
+  height: 140px;
+}
+
+.container {
+  overflow-y: auto;
+  padding-bottom: 18px;
 }
 
 .title {
   margin: 0;
-  /* Optical centering */
-  margin-bottom: -4px;
+  
 }
 
 .metadata {
@@ -24,3 +30,4 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+
